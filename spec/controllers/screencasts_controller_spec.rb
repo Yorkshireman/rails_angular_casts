@@ -18,11 +18,11 @@ RSpec.describe ScreencastsController, type: :controller do
                         source: "railscasts",
                         video_url: "http://media.railscasts.com/assets/episodes/videos/999-slow-rails.mp4")
       get :index
-      expect(response.body).to eq Screencast.all.to_json
       @screencasts = JSON.parse(response.body)
     end
 
     it 'returns all Screencasts from database' do
+      expect(response.body).to eq Screencast.all.to_json
       expect(@screencasts.size).to eq 2
     end
 
