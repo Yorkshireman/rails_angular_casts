@@ -1,6 +1,6 @@
 Displays a list of RailsCasts on the left side of the screen which, when clicked, play the video on the right side of the screen.
 
-Rails API with AngularJS frontend.
+Rails API with AngularJS frontend. RSpec for tests.
 
 ####To run:
 
@@ -13,4 +13,5 @@ Rails API with AngularJS frontend.
 
 ###Tests:
 
-There is some test coverage for the API but no frontend tests yet.
+There is some test coverage for the API but no frontend tests yet.  
+`rspec` to run the tests.
