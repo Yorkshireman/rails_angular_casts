@@ -11,6 +11,7 @@
   <div id="screencast-view-container" ng-show="selectedScreencast">
     <h2>{{selectedScreencast.title}}</h2>
     <p>{{selectedScreencast.summary}}</p>
+    <div flow-player="" id="player"></div>
     <p>
       Published at {{selectedScreencast.published_at | date: 'mediumDate'}}
       - <a ng-href="{{selectedScreencast.link}}">{{selectedScreencast.link}}</a>
